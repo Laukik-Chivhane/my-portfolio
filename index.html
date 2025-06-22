@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Laukik.codes</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="favicon.png" type="image/png">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul id="navItems">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section home-flex">
+    <div class="avatar-container">
+      <img src="avatar.png" alt="My Avatar" class="avatar-image" />
+    </div>
+
+    <div class="intro-text">
+      <div class="intro-box">
+        <h1>Hello, I'm</h1>
+        <h1 class="name">Laukik Chivhane</h1>
+        <p>A creative developer with a passion for blending design and functionality to build futuristic web experiences.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-box">
+    <h2 class="section-heading">About Me</h2>
+    <div class="info-grid">
+      <div class="info-block">
+        <span class="info-title">👋 Hello!</span>
+        <p class="info-detail"><strong>Laukik Chivhane</strong>, 3rd-year B.Tech student at <strong>SVPCET Nagpur</strong>, specializing in <strong>Industrial IoT</strong>.</p>
+      </div>
+      <div class="info-block">
+        <span class="info-title">💻 What I Do</span>
+        <p class="info-detail">Creative & passionate web developer. I build aesthetic, responsive websites that blend design with purpose.</p>
+      </div>
+      <div class="info-block">
+        <span class="info-title">📣 My Roles</span>
+        <p class="info-detail">Head of Media & Communications at <strong>E-Cell SVPCET</strong>.</p>
+      </div>
+      <div class="info-block">
+        <span class="info-title">🚀 Startup Life</span>
+        <p class="info-detail">Working with <strong>Bartr Catalyst Group (BCG)</strong> to gain real-world experience in the startup ecosystem.</p>
+      </div>
+      <div class="info-block">
+        <span class="info-title">🔍 Looking Ahead</span>
+        <p class="info-detail">Still exploring. Open to ideas, collaborations, and creative journeys that help me grow every day.</p>
+      </div>
+      <div class="info-block">
+        <span class="info-title">🛠️ Skills</span>
+        <p class="info-detail">Web Dev (HTML, CSS, JS, Tailwind), UI/UX Design, Content Creation, Project Management.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects-tight">
+    <h2 class="section-heading">Projects</h2>
+    <div class="projects-container">
+      <div class="project-card text-only" onclick="window.open('https://harroz.co.in', '_blank')">
+        <div class="project-info">
+          <h3 class="project-title">Resume Website</h3>
+          <p class="project-desc">A clean, responsive resume site I designed and built for a friend.</p>
+        </div>
+      </div>
+      <div class="project-card text-only" onclick="window.open('chamak-portal/index.html', '_blank')">
+        <div class="project-info">
+          <h3 class="project-title">Chamak Portal</h3>
+          <p class="project-desc">Chamak Portal is a mobile-friendly web app to monitor streetlights in different areas. It shows a 3x5 grid of lights, highlights faulty ones, and lets users assign workers for maintenance. Only areas needing attention appear in notifications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Me Section -->
+  <section id="contact" class="section">
+    <h2 class="section-heading">Contact Me</h2>
+    <form action="https://formspree.io/f/mvgrbeyd" method="POST" class="contact-form" onsubmit="handleSubmit(event)">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p id="successMessage" style="display:none; color: orange; margin-top: 1.5rem; font-weight: bold;">
+      ✅ Your message has been sent!
+    </p>
+  </section>
+
+  <!-- Social Buttons -->
+  <div class="social-buttons">
+    <a href="https://www.linkedin.com/in/laukik-chivhane-258009251" target="_blank" class="social-btn">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+    </a>
+    <a href="https://www.instagram.com/lauxkik.xd?igsh=Y3BwZjV5a25jNWYz" target="_blank" class="social-btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>
+  📧 <a href="mailto:laukikc9765@gmail.com" style="color: orange; text-decoration: underline;">laukikc9765@gmail.com</a>
+</p>
+
+  </footer>
+
+  <!-- Scripts -->
+  <canvas id="cursorCanvas"></canvas>
+  <script src="cursor-effect.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
